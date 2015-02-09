@@ -38,3 +38,4 @@ Credits
 ---------
 * [Rotten Tomatoes API](http://developer.rottentomatoes.com/docs/read/JSON)
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking)
+* Thanks to Jasdev Singh for advice on API key configuration management and setting storyboard preview layouts

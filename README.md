@@ -4,7 +4,7 @@
 
 This app displays the top DVD rentals using the [Rotten Tomatoes API](http://developer.rottentomatoes.com/docs/read/JSON).
 
-Time spent: `5 hours`
+Time spent: `6.5 hours`
 
 #### Setting your API key
 

@@ -32,7 +32,7 @@ Add your [RottenTomatoes API](http://developer.rottentomatoes.com/) key to a `Mo
 
 ### Walkthrough
 
-![RottenTomatoes API app walkthrough](http://i.imgur.com/EW0Kr0O.gif
+![RottenTomatoes API app walkthrough](http://i.imgur.com/EW0Kr0O.gif)
 
 Credits
 ---------

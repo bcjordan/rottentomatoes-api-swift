@@ -43,8 +43,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
         if (item.title == "Top DVD Rentals") {
             self.currentAPIEndpoint = "/api/public/v1.0/lists/dvds/top_rentals.json"
-        } else {
+        } else if (item.title == "Top Box Office") {
             self.currentAPIEndpoint = "/api/public/v1.0/lists/movies/box_office.json"
+        } else {
+            self.currentAPIEndpoint = "asdfas/api/this/is/broken"
         }
         self.fetchRottenTomatoesData()
     }

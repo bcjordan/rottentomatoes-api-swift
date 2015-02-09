@@ -8,13 +8,20 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITabBarDelegate {
     @IBOutlet weak var tableView: UITableView!
    
     @IBOutlet weak var errorView: UIView!
     
+    @IBOutlet weak var movieTypeTabBar: UITabBar!
+    
+    @IBOutlet weak var topBoxOffice: UITabBarItem!
+    @IBOutlet weak var topDVD: UITabBarItem!
+    
     var movies: NSArray?
     var rc: UIRefreshControl?
+    
+    var currentAPIEndpoint: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +32,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         rc?.addTarget(self, action: "onRefresh", forControlEvents: UIControlEvents.ValueChanged)
         
         self.tableView.insertSubview(self.rc!, atIndex: 0)
+
+        self.movieTypeTabBar.delegate = self
+        self.movieTypeTabBar.selectedItem = topBoxOffice
+        tabBar(self.movieTypeTabBar, didSelectItem: self.topBoxOffice)
         
+        self.fetchRottenTomatoesData()
+    }
+    
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
+        if (item.title == "Top DVD Rentals") {
+            self.currentAPIEndpoint = "/api/public/v1.0/lists/dvds/top_rentals.json"
+        } else {
+            self.currentAPIEndpoint = "/api/public/v1.0/lists/movies/box_office.json"
+        }
         self.fetchRottenTomatoesData()
     }
     
@@ -40,11 +60,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             myDict = NSDictionary(contentsOfFile: path)
         }
         if let dict = myDict {
-            // Use your dict here
             apiKey = myDict?["rottenTomatoesApiKey"] as NSString
         }
         
-        let rottenTomatoesURLString = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=" + apiKey
+        let rottenTomatoesURLString = "http://api.rottentomatoes.com\(self.currentAPIEndpoint!)?apikey=" + apiKey
         let request = NSURLRequest(URL: NSURL(string: rottenTomatoesURLString)!)
         SVProgressHUD.show()
         

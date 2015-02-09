@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CDD593F6521D72C660B6E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281B2F70324951FDADA07515 /* libPods.a */; };
+		D33C23E61A8859B70065785F /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C23E51A8859B70065785F /* MovieDetailsViewController.swift */; };
+		D36CD5AD1A885EBC0034321F /* MovieDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CD5AC1A885EBB0034321F /* MovieDetailsTableViewCell.swift */; };
+		D38EB24C1A886E3D0038B747 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D38EB24B1A886E3D0038B747 /* config.plist */; };
+		D38EB24E1A886F3F0038B747 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38EB24D1A886F3F0038B747 /* Movie.swift */; };
 		D3A6B0D01A883DA500883F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B0CF1A883DA500883F26 /* AppDelegate.swift */; };
 		D3A6B0D21A883DA500883F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B0D11A883DA500883F26 /* ViewController.swift */; };
 		D3A6B0D51A883DA500883F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A6B0D31A883DA500883F26 /* Main.storyboard */; };
 		D3A6B0D71A883DA500883F26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A6B0D61A883DA500883F26 /* Images.xcassets */; };
 		D3A6B0DA1A883DA500883F26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A6B0D81A883DA500883F26 /* LaunchScreen.xib */; };
 		D3A6B0E61A883DA500883F26 /* MobileTomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B0E51A883DA500883F26 /* MobileTomatoesTests.swift */; };
+		D3A6B0F11A88485300883F26 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B0F01A88485300883F26 /* MoviesViewController.swift */; };
+		D3A6B0F31A884C0F00883F26 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6B0F21A884C0F00883F26 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281B2F70324951FDADA07515 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD236E915FE0D666DFA05C2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA000362E0CA18F46E633C46 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D33C23E51A8859B70065785F /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		D36CD5AC1A885EBB0034321F /* MovieDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		D38EB24B1A886E3D0038B747 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		D38EB24D1A886F3F0038B747 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D3A6B0CA1A883DA500883F26 /* MobileTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A6B0CE1A883DA500883F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A6B0CF1A883DA500883F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +50,9 @@
 		D3A6B0DF1A883DA500883F26 /* MobileTomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileTomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A6B0E41A883DA500883F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A6B0E51A883DA500883F26 /* MobileTomatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileTomatoesTests.swift; sourceTree = "<group>"; };
+		D3A6B0EF1A8847BA00883F26 /* MobileTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3A6B0F01A88485300883F26 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		D3A6B0F21A884C0F00883F26 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CDD593F6521D72C660B6E3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A0EEAA8F4355907563CA2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD236E915FE0D666DFA05C2E /* Pods.debug.xcconfig */,
+				BA000362E0CA18F46E633C46 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34776E8693492B6945A7E0D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				281B2F70324951FDADA07515 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3A6B0C11A883DA500883F26 = {
 			isa = PBXGroup;
 			children = (
 				D3A6B0CC1A883DA500883F26 /* MobileTomatoes */,
 				D3A6B0E21A883DA500883F26 /* MobileTomatoesTests */,
 				D3A6B0CB1A883DA500883F26 /* Products */,
+				10A0EEAA8F4355907563CA2F /* Pods */,
+				34776E8693492B6945A7E0D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +115,18 @@
 			isa = PBXGroup;
 			children = (
 				D3A6B0CF1A883DA500883F26 /* AppDelegate.swift */,
+				D3A6B0EF1A8847BA00883F26 /* MobileTomatoes-Bridging-Header.h */,
 				D3A6B0D11A883DA500883F26 /* ViewController.swift */,
+				D3A6B0F01A88485300883F26 /* MoviesViewController.swift */,
+				D38EB24D1A886F3F0038B747 /* Movie.swift */,
 				D3A6B0D31A883DA500883F26 /* Main.storyboard */,
 				D3A6B0D61A883DA500883F26 /* Images.xcassets */,
+				D36CD5AC1A885EBB0034321F /* MovieDetailsTableViewCell.swift */,
 				D3A6B0D81A883DA500883F26 /* LaunchScreen.xib */,
 				D3A6B0CD1A883DA500883F26 /* Supporting Files */,
+				D3A6B0F21A884C0F00883F26 /* MovieTableViewCell.swift */,
+				D33C23E51A8859B70065785F /* MovieDetailsViewController.swift */,
+				D38EB24B1A886E3D0038B747 /* config.plist */,
 			);
 			path = MobileTomatoes;
 			sourceTree = "<group>";
@@ -119,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3A6B0E91A883DA500883F26 /* Build configuration list for PBXNativeTarget "MobileTomatoes" */;
 			buildPhases = (
+				A0FA07A142B3861510438AE3 /* Check Pods Manifest.lock */,
 				D3A6B0C61A883DA500883F26 /* Sources */,
 				D3A6B0C71A883DA500883F26 /* Frameworks */,
 				D3A6B0C81A883DA500883F26 /* Resources */,
+				7AEFEC8222C165E5A62BE56B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38EB24C1A886E3D0038B747 /* config.plist in Resources */,
 				D3A6B0D51A883DA500883F26 /* Main.storyboard in Resources */,
 				D3A6B0DA1A883DA500883F26 /* LaunchScreen.xib in Resources */,
 				D3A6B0D71A883DA500883F26 /* Images.xcassets in Resources */,
@@ -207,13 +254,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AEFEC8222C165E5A62BE56B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0FA07A142B3861510438AE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3A6B0C61A883DA500883F26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38EB24E1A886F3F0038B747 /* Movie.swift in Sources */,
+				D33C23E61A8859B70065785F /* MovieDetailsViewController.swift in Sources */,
 				D3A6B0D21A883DA500883F26 /* ViewController.swift in Sources */,
 				D3A6B0D01A883DA500883F26 /* AppDelegate.swift in Sources */,
+				D36CD5AD1A885EBC0034321F /* MovieDetailsTableViewCell.swift in Sources */,
+				D3A6B0F31A884C0F00883F26 /* MovieTableViewCell.swift in Sources */,
+				D3A6B0F11A88485300883F26 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,21 +419,25 @@
 		};
 		D3A6B0EA1A883DA500883F26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD236E915FE0D666DFA05C2E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTomatoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MobileTomatoes/MobileTomatoes-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D3A6B0EB1A883DA500883F26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA000362E0CA18F46E633C46 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTomatoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileTomatoes/MobileTomatoes-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +494,7 @@
 				D3A6B0EB1A883DA500883F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3A6B0EC1A883DA500883F26 /* Build configuration list for PBXNativeTarget "MobileTomatoesTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +503,7 @@
 				D3A6B0EE1A883DA500883F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
